@@ -11,14 +11,10 @@ font-family: 'League Spartan', sans-serif;
 }
 
 /*---------------------------Cards section------------------------------*/
-.card{
-  width: 100%;
-}
 .card-title {
   font-family: 'League Spartan', sans-serif;
   font-weight: 600;
   font-size: 1.2em;
-  color: rgb(112, 110, 110);
 }  
 
 .card-text {
@@ -30,7 +26,7 @@ font-family: 'League Spartan', sans-serif;
   position: absolute;
   font-family: 'Quicksand', sans-serif;
   font-size: .7em;
-  color: black;
+  color: rgb(112, 110, 110);
 }
 
 .meta-style {
@@ -39,15 +35,13 @@ font-family: 'League Spartan', sans-serif;
 }
 
 .meta-style ul {
-  --text-align: left;
+  text-align: left;
 }
 
 .meta-style ul li {
   font-size: .7em;
-  margin-right: 5px;
+  font-weight: 700;
+  margin:2px;
   list-style-type: none;
-  font-family: 'League Spartan',sans-serif;
-}
-.meta-style ul li strong{
-  color: rgb(92, 91, 91);
+  font-family: 'Quicksand', sans-serif;
 }

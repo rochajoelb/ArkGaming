@@ -1,0 +1,115 @@
+body {
+    overflow-x: hidden;
+
+}
+
+.navbar {
+    font-family: 'League Spartan', sans-serif;
+}
+
+.nav-logo {
+    width: 10rem;
+}
+
+.faixa {
+    background-color: #0097B2; 
+    color:black; 
+    padding: 20px; 
+    text-align: center;
+}
+
+/*---------------------------Cards section------------------------------*/
+.text-center{
+    color: #0097B2;
+  }
+  
+  
+
+.card-link {
+    text-decoration: none;
+    color: black;
+  }
+
+
+.card-title {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+
+.card-text {
+    position: relative;
+    width: 100%;
+    height: 5rem;
+}
+
+.card-text p {
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    font-size: .7em;
+    color: rgb(112, 110, 110);
+}
+
+.price{
+    text-decoration:line-through ;
+  }
+
+  .comprar {
+    background-color: #0097B2;
+     height: 50px;
+  }
+
+.meta-style {
+    border-top: 1px dashed #cee1f8;
+    margin-top: 25px;
+}
+
+.meta-style ul {
+    text-align: left;
+}
+
+.meta-style ul li {
+    font-size: .7em;
+    font-weight: 700;
+    margin: 2px;
+    list-style-type: none;
+    font-family: 'Quicksand', sans-serif;
+}
+/*-----------------------footer-------------------------*/
+
+footer {
+    background-color: #443d3d;
+    color: white;
+}
+
+.footer-logo {
+    width: 10rem;
+}
+
+li {
+    list-style-type: none;
+    padding: .25rem 0;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: .8rem;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-twitter {
+    background: white;
+    color: black;
+}
+
+.fa {
+    padding: .5rem .7rem;
+    font-size: 1.1rem;
+    --width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 15px 12px;
+}

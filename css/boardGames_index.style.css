@@ -9,6 +9,9 @@ body {
 .nav-logo {
     width: 6rem;
 }
+.hero{
+    width: 100%;
+}
 
 /*---------------Carroussel--------------------------------------------*/
 
@@ -19,16 +22,23 @@ body {
 
 
 /*---------------------------Cards section------------------------------*/
-.card {
-    width: 100%;
-}
+ .text-center{
+    color: #443d3d;
+  }
+  
+  
+
+.card-link {
+    color: black;
+  }
+
 
 .card-title {
     font-family: 'League Spartan', sans-serif;
     font-weight: 600;
     font-size: 1.2em;
-    color: rgb(112, 110, 110);
 }
+
 
 .card-text {
     position: relative;
@@ -40,8 +50,12 @@ body {
     position: absolute;
     font-family: 'Quicksand', sans-serif;
     font-size: .7em;
-    color: black;
+    color: rgb(112, 110, 110);
 }
+
+.price{
+    text-decoration:line-through ;
+  }
 
 .meta-style {
     border-top: 1px dashed #cee1f8;
@@ -49,16 +63,13 @@ body {
 }
 
 .meta-style ul {
-    --text-align: left;
+    text-align: left;
 }
 
 .meta-style ul li {
     font-size: .7em;
-    margin-right: 5px;
+    font-weight: 700;
+    margin: 2px;
     list-style-type: none;
-    font-family: 'League Spartan', sans-serif;
-}
-
-.meta-style ul li strong {
-    color: rgb(92, 91, 91);
+    font-family: 'Quicksand', sans-serif;
 }

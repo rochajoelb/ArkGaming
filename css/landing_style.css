@@ -70,7 +70,7 @@ body{
 
 .boardAnchor{
     position: absolute;
-    bottom:20%;
+    bottom:10%;
     right:20%;
     text-align: center;
     z-index: 4;
@@ -83,6 +83,13 @@ body{
     font-family: 'League Spartan', sans-serif;
     color: transparent;
     transition: color linear .5s;
+    animation-name: logoAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.boardAnchor h1{
+    animation-delay: 1s;
 }
 
 .eGamingAnchor h4,
@@ -111,7 +118,6 @@ body{
 }
 
 @media screen and (max-width: 600px) {
-
     .eGamingAnchor h1,
     .boardAnchor h1{
         color: white;
@@ -123,4 +129,21 @@ body{
         font-size: 1rem;
     }
 
+}
+
+/*----------------sections animatios-------------*/
+/*
+@keyframes logoAnimation{
+    0% {color: transparent}
+    10%{color: white; opacity: .5;}
+    25%{color: rgb(241, 180, 104);opacity: .5;}
+    50%{color:rgb(247, 151, 34); opacity: .5;}
+    75%{color: rgb(241, 180, 104); opacity: .5;}
+    90%{color: white; opacity: .5;}
+    100% {color: transparent}
+}
+*/
+@keyframes logoAnimation {
+    from{color:transparent;}
+    to{color: rgb(247, 151, 34);opacity: .5;}
 }
