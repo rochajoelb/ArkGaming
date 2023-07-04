@@ -3,13 +3,6 @@ body {
 
 }
 
-.navbar {
-    font-family: 'League Spartan', sans-serif;
-}
-
-.nav-logo {
-    width: 10rem;
-}
 
 .faixa {
     background-color: #0097B2; color:black; padding: 20px; text-align: center;
@@ -72,41 +65,4 @@ body {
     margin: 2px;
     list-style-type: none;
     font-family: 'Quicksand', sans-serif;
-}
-/*-----------------------footer-------------------------*/
-
-footer {
-    background-color: #443d3d;
-    color: white;
-}
-
-.footer-logo {
-    width: 10rem;
-}
-
-li {
-    list-style-type: none;
-    padding: .25rem 0;
-}
-
-li a {
-    text-decoration: none;
-    color: white;
-    font-size: .8rem;
-}
-
-.fa-facebook,
-.fa-instagram,
-.fa-twitter {
-    background: white;
-    color: black;
-}
-
-.fa {
-    padding: .5rem .7rem;
-    font-size: 1.1rem;
-    --width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 15px 12px;
 }

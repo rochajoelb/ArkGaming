@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/iniciar_sessao_Style.css">
+    <link rel="shortcut icon" href="./boardGamesImgs/logo.png" type="image/x-icon">
+    <title>Iniciar Sessão</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="landing.html">
+            <img class="nav-logo"  src="./boardGamesImgs/logo.png" alt="">
+          </a>
+        </div>
+    </nav> 
+    <!--End navbar-->
+    
+    <div class="center">
+        <h1>Login</h1>
+        <form method="post"></form>
+        <div class="txt_field">
+            <input id="user" type="text" required>
+            <span></span>
+            <label>Utilizador</label> 
+        </div>
+        <div class="txt_field">
+            <input id="pass" type="password" required>
+            <span></span>
+            <label>Palavra-Passe</label>
+        </div>
+        <div class="pass">Esqueceste-te da Palavra-Passe?</div>
+        <div class="d-grid mt-4">
+            <button id="loginBtn" onclick="verificarLogin()" class="login">Login</button>
+        </div>
+        <div class="signup_link">
+            Ainda não tens conta? <a href="emConstrucao.html"> Cria a tua nova conta aqui!</a>
+        </div>
+    </div>
+</body>
+</html>
+

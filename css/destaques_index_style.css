@@ -2,14 +2,6 @@ body {
     overflow-x: hidden;
 }
 
-.navbar {
-    font-family: 'League Spartan', sans-serif;
-}
-
-.nav-logo {
-    width: 6rem;
-}
-
 /*---------------------------Cards section------------------------------*/
 .text-center{
 --color: #443d3d;

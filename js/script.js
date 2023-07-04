@@ -21,3 +21,22 @@ $('.navTrigger').click(function () {
 });
 
 
+
+function verificarLogin(){
+    var utilizador = document.getElementById('user').value;
+    var password = document.getElementById('pass').value;
+
+    if(utilizador === ""){
+    alert('Por Favor insira o nome de utilizador')
+}
+ else if(password === ""){
+    alert('Por Favor insira a password')
+ } 
+   
+else if(utilizador === "passaro" && password === "user"){
+    alert('Registrado com sucesso')
+}
+else{
+    alert('Dados incorretos')
+}
+}
