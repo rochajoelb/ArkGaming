@@ -15,18 +15,17 @@ app.post("/store-email", (req, res) => {
   if (!email) {
     return res.status(400).json({ error: "Invalid email" });
   }
-
-  const data = { email: email };
-  const jsonData = JSON.stringify(data);
   
+  
+  const jsonData = email + ", ";
   const filePath = path.join(__dirname, "emails.json");
-  //fs.appendFile() para criar uma lista 
-  fs.appendFile()(filePath, jsonData, (err) => {
+  
+  fs.appendFile(filePath, jsonData, (err) => {
     if (err) {
       console.error("Error writing to file:", err);
       return res.status(500).json({ error: "Error storing email" });
     }
-
+    
     res.json({ message: "Email stored successfully" });
   });
 });

@@ -22,7 +22,8 @@ function verificarLogin() {
   } else if (password === "") {
     alert("Por Favor insira a password");
   } else if (utilizador === "passaro" && password === "user") {
-    alert("Registrado com sucesso");
+    alert("Login com sucesso");
+    window.location.replace("landing.html")
   } else {
     alert("Dados incorretos");
   }
@@ -43,7 +44,7 @@ function guardaEmail(){
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email: guardarEmail }),
+        body: JSON.stringify({ email: guardarEmail}),
       })
         .then((response) => response.json())
         .then((data) => console.log(data))
@@ -55,7 +56,6 @@ function guardaEmail(){
   }else{
     alert("Tem de tomar conhecimento da politica de dados pessoais!")
   }
-  
 }
 
 
