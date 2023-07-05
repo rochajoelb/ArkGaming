@@ -1,9 +1,67 @@
 
+.emailContainer{
+    background-color: rgb(31, 30, 30);
+}
+
+.emailContainer h3, p{
+    color:white;
+}
+
+.emailHeader{
+    padding:1rem;
+}
+.emailContainer h3{
+    font-size: 1.5rem;
+    color:rgb(13, 121, 139);
+}
+.emailContainer p{
+    font-size: 1.2rem;
+    color:#FFBD59;
+}
+
+.emailForm{
+    padding:1rem;
+}
+.emailInput{
+    max-width: 450px;
+    width:100%;
+    background-color: #443d3d;
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+}
+
+.checkboxContainer{
+    display:flex;
+    flex-direction: row;
+}
+
+.checkboxContainer .checkboxLabel{
+    color:#443d3d;
+    font-size: .8rem;
+}
+
+.checkboxContainer .checkboxLabel span{
+    text-decoration: underline;
+}
+.btnEnviar{
+    padding: .5rem 5rem;
+    background-color: rgb(13, 121, 139);
+    color: #FFBD59;
+    border:none;
+    font-size: 1.3rem;
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+
+
+
 
 /*-----------------------footer-------------------------*/
 
 footer {
-    background-color: #443d3d;
+    background-color: #313131;
     color: white;
 }
 

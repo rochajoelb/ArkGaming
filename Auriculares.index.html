@@ -235,7 +235,37 @@
 </body>
 
 <!--Footer section-->
-<footer class="container-fluid mt-5 p-5">
+<!--email-->
+<section class="container-fluid emailContainer mt-5 p-5 h-50">
+  <div class="row">
+    <div class="col">
+      <div class="emailHeader">
+        <h3>Recebe as nossas novidades e promoções</h3>
+      <p>Subscrever Newsletter</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="emailForm">
+        <form action="#">
+          <input id="emailInput"class="emailInput mb-2" name="input_1" placeholder="O teu e-mail" type="email">
+          <div class="checkboxContainer"> 
+              <label for="checkbox" class="checkboxLabel">
+              <input id="checkbox" 
+              name="checkbox" type="checkbox" class="checkboxInput" value="">
+              Li e tomei conhecimento sobre a informação relativa ao
+              <span  class="politicaPrivacidade">
+                Tratamento de Dados Pessoais
+              </span> 
+            </label> 
+          </div>
+          <input type="submit" onclick="guardaEmail()" class="btnEnviar mt-5">
+      </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!--end email-->
+<footer class="container-fluid p-5">
   <div class="row">
      <div class="text-center mb-5">
         <a href="./landing.html"><img class="footer-logo" src="./boardGamesImgs/logo.png" alt="Logo"></a>
