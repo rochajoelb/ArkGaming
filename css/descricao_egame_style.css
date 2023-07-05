@@ -1,13 +1,14 @@
-
 body {
     overflow-x: hidden;
     box-sizing: border-box;
+    --border: .05em solid;
+    --border-color: #0097b2;
 }
 
 /*---------------Título--------------------------------------------*/
 
 .titulo{
-    background-color: #FFBD59;
+    background-color: #0097b2;
     text-align: center;
     padding: .7em;
     font-family: 'League Spartan', sans-serif;
@@ -15,62 +16,8 @@ body {
     font-size: 2.5em;
 }
 
-/*----------Select grid section------------*/
+/*-------Picture Price Section-------------*/
 
-.titulo_filtro{
-    --border: .05em solid black;
-    --background-color: #FFBD59;
-    text-align: center;
-    font-family: 'League Spartan', sans-serif;
-    font-weight: 300;
-    font-size: 2em;
-}
-
-.subtitulo_filtro{
-    border: .05em solid;
-    border-color: #FFBD59;
-    text-align: center;
-    font-family: 'League Spartan', sans-serif;
-    font-weight: 200;
-    font-size: 1.5em;
-}
-
-/*---------------------------Cards section------------------------------*/
-
-.row {
-    padding: 1em;
-}
-
-.aside{
-    border: .05em solid;
-    border-color: #FFBD59;
-    padding: 1.5em;
-}
-
-.comprar {
-    background-color: #FFBD59 ;
-    height: 50px;
-    width: 100%;
-}
-.card{
-    padding:5px;
-}
-.cartao{
-    border: .15em solid;
-    border-color: #FFBD59; 
-}
-
-.card-title {
-    font-family: 'League Spartan', sans-serif;
-    font-weight: 600;
-    font-size: 1em;
-}
-
-.card-text {
-    position: relative;
-    width: 100%;
-    height: 5rem;
-}
 
 .regular-price {
     position: relative;
@@ -80,9 +27,46 @@ body {
     color: rgb(161, 36, 36);
 }
 
-.card-img-top {
-    box-sizing: border-box;
+.aside{
+    border: 0;
+    padding: 1.5em;
+}
+
+.btn {
+    background-color: #0097b2 !important;
+    color:black!important;
+}
+
+.comprar{
+    background: #0097b2;
+    height: 50px;
     width: 100%;
+}
+
+.card-title {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.card-subtitle{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    padding-top: 1em;
+}
+
+.card-text {
+    position: relative;
+    width: 100%;
+    height: 5rem;
+}
+
+
+.card-img-top {
+    --box-sizing: border-box;
+    width: 100%;
+    height:100%;
 }
 
 .image-link {
@@ -97,9 +81,6 @@ body {
     color: rgb(112, 110, 110);
 }
 
-.card button{
-    width: 100%;
-}
 .meta-style {
     border-top: 1px dashed #cee1f8;
     margin-top: 25px;
@@ -118,3 +99,24 @@ body {
 }
 
 
+/*----------Description section------------*/
+
+
+.titulo_descricao{
+    --border: .05em solid;
+    --border-color: #0097b2;
+    --background-color: #0097b2;
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+}
+
+.descricao_jogo{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    --border: .05em solid;
+    --border-color: #0097b2;
+    padding: 2em;
+}
