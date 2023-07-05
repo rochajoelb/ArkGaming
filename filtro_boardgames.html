@@ -62,118 +62,111 @@
     <section class="container-fluid p-5">
         <div class="row">
             <!--Select grid section-->
-            <div class="col-sm-3 col-md-6 col-lg-3 aside">
-                <h1 class="titulo_filtro">Filtros</h1>
-                <div>
-                    <br>
-                    <h3 class="subtitulo_filtro">Categorias</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckEstrategia">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Estratégia
-                        </label>
+            <div class="col-md-3 aside">
+                <h1 class="titulo_filtro mb-3">Filtros</h1>
+                    <div>
+                         <h3 class="subtitulo_filtro">Categorias</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck_estrategia">
+                                <label class="form-check-label" for="flexCheck_estrategia">
+                                Estratégia
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck_familia">
+                                <label class="form-check-label" for="flexCheck_familia">
+                                Família
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck_cooperativos">
+                                <label class="form-check-label" for="flexCheck_cooperativos">
+                                Cooperativos
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck_party">
+                                <label class="form-check-label" for="flexCheck_party">
+                                Party
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck_tematico">
+                                <label class="form-check-label" for="flexCheck_tematico">
+                                Temático
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck_card">
+                                <label class="form-check-label" for="flexCheck_card">
+                                Card Games
+                                </label>
+                            </div>
+                        </div>
+                    <div class="preco_filtro mt-3">
+                        <h3 class="subtitulo_filtro mb-3">Preço</h3>
+                        <input type="number" id="valor_minimo" placeholder="Valor mínimo">
+                        <input type="number" id="valor_maximo" placeholder="Valor máximo">
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckFamília">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Família
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckCooperativos">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Cooperativos
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckParty">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Party
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckTemático">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Temático
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckTemáticoCardGames">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Card Games
-                        </label>
-                    </div>
-                </div>
-                <br>
-                <div>
-                    <h3 class="subtitulo_filtro">Preço</h3>
-                    <br>
-                    <span><label for="valor_minimo"></label><input type="number" id="valor_minimo"
-                            placeholder="Valor mínimo"></span>
-                    <span><label for="valor_maximo"></label><input type="number" id="valor_maximo"
-                            placeholder="Valor máximo"></span>
-                </div>
-                <br><br>
-                <div>
+                        <br><br>
+                    <div>
                     <h3 class="subtitulo_filtro">Idade</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheck4anos">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck_4anos">
+                            <label class="form-check-label" for="flexCheck_4anos">
                             Até 4 anos
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheck10anos">
-                        <label class="form-check-label" for="flexCheckDefault">
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck_10anos">
+                            <label class="form-check-label" for="flexCheck_10anos">
                             De 5 a 10 anos
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheck13anos">
-                        <label class="form-check-label" for="flexCheckDefault">
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck_13anos">
+                            <label class="form-check-label" for="flexCheck_13anos">
                             De 11 a 13 anos
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheck14anos">
-                        <label class="form-check-label" for="flexCheckDefault">
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheck_14anos">
+                            <label class="form-check-label" for="flexCheck_14anos">
                             A partir de 14 anos
-                        </label>
+                            </label>
+                        </div>
                     </div>
+                    <div>
+                        <h3 class="subtitulo_filtro mt-3">Tempo de Jogo</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck_30min">
+                            <label class="form-check-label" for="flexCheck_30min">
+                                Até 30 minutos
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck_1h">
+                            <label class="form-check-label" for="flexCheck_1h">
+                                De 30 minutos à 1 hora
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckD_2h">
+                            <label class="form-check-label" for="flexCheckD_2h">
+                                De 1 hora à 2 horas
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheck_maishoras">
+                            <label class="form-check-label" for="flexCheck_maishoras">
+                                Mais de 2 horas
+                                </label>
+                            </div>
+                    </div>
+                    <div class="d-grid mt-5 gap-2">
+                        <button class="btn btn-primary" type="button">Aplicar</button>
+                      </div>
                 </div>
-                <br>
-                <div>
-                    <h3 class="subtitulo_filtro">Tempo de Jogo</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheck30minutos">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Até 30 minutos
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheck1hora">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            De 30 minutos à 1 hora
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheck2horas">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            De 1 hora à 2 horas
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheck2horas">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Mais de 2 horas
-                        </label>
-                    </div>
-                </div>
-                <br>
-                <div class="d-grid gap-2">
-                    <button class="btn btn-primary" type="button">Aplicar</button>
-                </div>
-            </div>
             <!--End Select grid section-->
             <!--Grid Card section-->
             <div class="col-sm-9 col-md-6 col-lg-9">
@@ -186,7 +179,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">Brass: Birmingham</h4>
                                 <div class="product-price">
-                                    <h3 class="regular-price">49,99 &nbsp €</h3>
+                                    <h3 class="regular-price">86,99 &nbsp €</h3>
                                 </div>
                             </div>
                             <div class="card-footer">
@@ -201,7 +194,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">The Witcher: Old World</h4>
                                 <div class="product-price">
-                                    <h3 class="regular-price">49,99 &nbsp €</h3>
+                                    <h3 class="regular-price">39,99 &nbsp €</h3>
                                 </div>
                             </div>
                             <div class="card-footer">
@@ -230,7 +223,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">Star Wars: Rebellion</h4>
                                 <div class="product-price">
-                                    <h3 class="regular-price">49,99 &nbsp €</h3>
+                                    <h3 class="regular-price">99,99 &nbsp €</h3>
                                 </div>
                             </div>
                             <div class="card-footer">
@@ -246,7 +239,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">XCOM: The Board Game</h4>
                                 <div class="product-price">
-                                    <h3 class="regular-price">49,99 &nbsp €</h3>
+                                    <h3 class="regular-price">45,99 &nbsp €</h3>
                                 </div>
                             </div>
                             <div class="card-footer">
@@ -261,7 +254,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">Cthulhu: Death May Die</h4>
                                 <div class="product-price">
-                                    <h3 class="regular-price">49,99 &nbsp €</h3>
+                                    <h3 class="regular-price">89,99 &nbsp €</h3>
                                 </div>
                             </div>
                             <div class="card-footer">
@@ -276,7 +269,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">Mansion of Madness</h4>
                                 <div class="product-price">
-                                    <h3 class="regular-price">49,99 &nbsp €</h3>
+                                    <h3 class="regular-price">66,60 &nbsp €</h3>
                                 </div>
                             </div>
                             <div class="card-footer">
@@ -291,7 +284,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">Star Wars: Imperial Assault</h4>
                                 <div class="product-price">
-                                    <h3 class="regular-price">49,99&nbsp€</h3>
+                                    <h3 class="regular-price">85,99&nbsp€</h3>
                                 </div>
                             </div>
                             <div class="card-footer">
