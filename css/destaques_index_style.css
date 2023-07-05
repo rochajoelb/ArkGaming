@@ -23,8 +23,13 @@ color: black;
 }
 
 
-.comprar {
+.comprar-eg {
     background-color: #0097B2;
+    height: 50px;
+  }
+
+  .comprar-bg {
+    background-color: #FFBD59;
     height: 50px;
   }
   
