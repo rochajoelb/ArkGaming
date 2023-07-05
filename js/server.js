@@ -21,7 +21,7 @@ app.post("/store-email", (req, res) => {
   
   const filePath = path.join(__dirname, "emails.json");
   //fs.appendFile() para criar uma lista 
-  fs.writeFile(filePath, jsonData, (err) => {
+  fs.appendFile()(filePath, jsonData, (err) => {
     if (err) {
       console.error("Error writing to file:", err);
       return res.status(500).json({ error: "Error storing email" });
