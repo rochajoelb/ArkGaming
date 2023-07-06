@@ -4,20 +4,13 @@ body {
 }
 
 
-.nav-logo {
-    width: 10rem;
-}
-
 .faixa {
-    background-color: #0097B2; 
-    color:black; 
-    padding: 20px; 
-    text-align: center;
+    background-color: #FFBD59; color:black; padding: 20px; text-align: center;
 }
 
 /*---------------------------Cards section------------------------------*/
 .text-center{
-    color: #0097B2;
+    color: #FFBD59;
   }
   
   
@@ -53,7 +46,7 @@ body {
   }
 
   .comprar {
-    background-color: #0097B2;
+    background-color: #FFBD59;
      height: 50px;
   }
 
@@ -73,7 +66,3 @@ body {
     list-style-type: none;
     font-family: 'Quicksand', sans-serif;
 }
-
-.footer-logo {
-    width: 12rem;
-  }

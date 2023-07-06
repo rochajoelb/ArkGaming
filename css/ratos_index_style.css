@@ -4,8 +4,15 @@ body {
 }
 
 
+.nav-logo {
+    width: 10rem;
+}
+
 .faixa {
-    background-color: #0097B2; color:black; padding: 20px; text-align: center;
+    background-color: #0097B2; 
+    color:black; 
+    padding: 20px; 
+    text-align: center;
 }
 
 /*---------------------------Cards section------------------------------*/
@@ -66,3 +73,7 @@ body {
     list-style-type: none;
     font-family: 'Quicksand', sans-serif;
 }
+
+.footer-logo {
+    width: 12rem;
+  }
