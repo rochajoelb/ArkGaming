@@ -2,6 +2,12 @@ body {
     overflow-x: hidden;
 
 }
+
+
+.nav-logo {
+    width: 10rem;
+}
+
 .faixa {
     background-color: #0097B2; 
     color:black; 
@@ -67,3 +73,7 @@ body {
     list-style-type: none;
     font-family: 'Quicksand', sans-serif;
 }
+
+.footer-logo {
+    width: 12rem;
+  }
