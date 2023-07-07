@@ -3,7 +3,9 @@ body {
 
 }
 
-
+.logo {
+    width: 10rem;
+}
 .faixa {
     background-color: #FFBD59; color:black; padding: 20px; text-align: center;
 }
