@@ -4,29 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho</title>
+    <!--Font links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <!--FontAwesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--css links-->
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/carrinho.css">
+    <link rel="stylesheet" href="./css/footer_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body onload="carrinho()">
     <!-- HTML -->
+<section class="container-fluid">
+  <div class="row">
+      <div class="col-sm-12 col-md-8 p-md-5 p-sm-0">
+        <h1 class="">Carrinho</h1>
+        <table id="carrinhoTable">
+        <thead>
+          <tr>
+            <th>Artigo</th>
+            <th>Preço</th>
+            <th>Qtd</th>
+            <th>Remover</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        </table>
+        <br>
+      </div>
+      <div class="total-container col-sm-12 col-md-3 mt-5 p-4">
+        <div class="total">Total: <div id="campoTotal"></div>€</div>
+          <br>
+          <button onclick="limparCarrinho()">Finalizar Compra</button>
+        </div>
+      </div>
+  </div>
+</section>
 
-<h1>Carrinho</h1>
-<table id="carrinhoTable">
-  <thead>
-    <tr>
-      <th>Artigo</th>
-      <th>Preço</th>
-      <th>Qtd</th>
-      <th>Remover</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
-<br>
 
-<div class="total">Total: <div id="campoTotal"></div></div>
-<br>
-<button onclick="limparCarrinho()">Finalizar Compra</button>
 
-<script src="./js/script.js"></script>
+<!--Footer section-->
+<!--email-->
+<section class="container-fluid emailContainer mt-5 p-5 h-50">
+  <div class="row">
+    <div class="col">
+      <div class="emailHeader">
+        <h3>Recebe as nossas novidades e promoções</h3>
+      <p>Subscrever Newsletter</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="emailForm">
+        <form action="#">
+          <input id="emailInput" class="emailInput mb-2" name="input_1" placeholder="O teu e-mail" type="email">
+          <div class="checkboxContainer"> 
+              <label for="checkbox" class="checkboxLabel">
+              <input id="checkbox" 
+              name="checkbox" type="checkbox" class="checkboxInput" value="">
+              Li e tomei conhecimento sobre a informação relativa ao
+              <span  class="politicaPrivacidade">
+                Tratamento de Dados Pessoais
+              </span> 
+            </label> 
+          </div>
+          <input type="submit" onclick="guardaEmail()" class="btnEnviar mt-5">
+      </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!--end email-->
+<footer class="container-fluid p-5">
+   <div class="row">
+      <div class="text-center mb-5">
+         <a href="./landing.html"><img class="footer-logo" src="./boardGamesImgs/logo.png" alt="Logo"></a>
+      </div>
+      <div class="col-md-4">
+         <ul>
+            <li>
+               <h6>Categorias</h6>
+            </li>
+            <li><a href="./destaques_eg_index.html">E-Games</a></li>
+            <li><a href="./destaques_bg_index.html">Board Games</a></li>
+         </ul>
+      </div>
+      <div class="col-md-4">
+         <ul>
+            <li>
+               <h6>Sobre</h6>
+            </li>
+            <li><a href="emConstrucao.html">Taxas de envio</a></li>
+            <li><a href="emConstrucao.html">Devoluções</a></li>
+            <li><a href="emConstrucao.html">Politica de Privacidade</a></li>
+         </ul>
+      </div>
+      <div class="col-md-4">
+         <div>
+            <ul>
+               <li>
+                  <h6>Contactos</h6>
+               </li>
+               <li><a href="emConstrucao.html">Email: contacto@arkgaming.com</a></li>
+               <li><a href="emConstrucao.html">Tel: 214562378</a></li>
+            </ul>
+         </div>
+         <ul class="d-flex flex-start">
+            <li><a href="emConstrucao.html" class="fa fa-facebook"></a></li>
+            <li><a href="emConstrucao.html" class="fa fa-instagram"></a></li>
+            <li><a href="emConstrucao.html" class="fa fa-twitter"></a></li>
+         </ul>
+      </div>
+   </div>
+</footer>    
+<!--End Footer section--> 
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- for Safari support  -->
+    <script async="" src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
 </body>
 </html>

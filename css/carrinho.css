@@ -1,16 +1,30 @@
+ body {
+    overflow: hidden;
+ }
+ 
  table,
  th,
  td {
-     border: 1px solid white;
-     border-collapse: collapse;
+    border: 1px solid white;
+    border-collapse: collapse;
  }
 
  th,
  td {
-     background-color: #96D4D4;
-     padding: 10px;
+    background-color: #96D4D4;
+    padding: 10px;
+ }
+ .total-container{
+    background-color:rgba(236, 236, 236, 0.644);
  }
 
  .total {
-     display: flex;
+    display: flex; 
+    font-size: 1.5rem;
  }
+
+ #qtd{
+    width:3rem;
+ }
+
+ 
