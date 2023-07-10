@@ -97,9 +97,9 @@ function carrinho() {
     var novaLinha = document.createElement("tr");
     novaLinha.innerHTML = `
       <td>${produto.nome}</td>
-      <td>${produto.preco}</td>
+      <td>${produto.preco}€</td>
       <td><input id="qtd" type="number" value="1"></td>
-      <td><button class="item" onclick="removerItem(this)">&times</button></td>
+      <td><button class="item" onclick="removerItem(this)">Remover</td>
     `;
     carrinhoTableBody.appendChild(novaLinha);
     total += parseFloat(produto.preco);

@@ -1,10 +1,4 @@
- table{
-    
-    display:table-header-group;
-    border: 1px solid rgb(1, 1, 1);
-    border-collapse: collapse;
-}
- 
+ table,
  th,
  td {
      border: 1px solid rgb(1, 1, 1);
