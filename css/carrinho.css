@@ -1,16 +1,41 @@
- table,
+ table{
+    
+    display:table-header-group;
+    border: 1px solid rgb(1, 1, 1);
+    border-collapse: collapse;
+}
+ 
  th,
  td {
-     border: 1px solid white;
+     border: 1px solid rgb(1, 1, 1);
      border-collapse: collapse;
  }
 
  th,
  td {
-     background-color: #96D4D4;
+     background-color: #0097B2;
      padding: 10px;
  }
 
  .total {
-     display: flex;
+   
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: black;
+ }
+
+ .corpoCarrinho{
+    width: 100%;
+    padding: 2em;
+   
+ }
+
+ .corpoTotal{
+    text-align: center;
+    vertical-align:middle;
+    border: 1px solid rgb(1, 1, 1);
+    padding: 2em;
+    background-color: #0097B2;
  }
