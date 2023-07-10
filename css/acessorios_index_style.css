@@ -6,11 +6,23 @@ body {
 .logo {
     width: 10rem;
 }
-.faixa {
-    background-color: #FFBD59; color:black; padding: 20px; text-align: center;
+
+.nav-logo {
+    width: 10rem;
 }
 
+.faixa {
+    background-color: #FFBD59; color:black; padding: 20px; text-align: center;
+    font-weight: 600;
+    font-size: xx-large;
+
+}
+ 
 /*---------------------------Cards section------------------------------*/
+.row{
+    padding: 2.5em 2em 0.2em;
+}
+
 .text-center{
     color: #FFBD59;
   }
@@ -43,11 +55,12 @@ body {
     color: rgb(112, 110, 110);
 }
 
-.price{
-    text-decoration:line-through ;
+.regular-price{
+    font-weight: 600;
+    font-size: x-large;
   }
 
-  .comprar {
+.comprar {
     background-color: #FFBD59;
      height: 50px;
   }
@@ -67,4 +80,9 @@ body {
     margin: 2px;
     list-style-type: none;
     font-family: 'Quicksand', sans-serif;
+}
+
+
+.footer-logo {
+  width: 12rem;
 }
