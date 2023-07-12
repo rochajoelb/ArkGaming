@@ -70,7 +70,7 @@ function adicionarAoCarrinho(nome, preco) {
   }
   
   var produtos = [];
-  var produtosLocalStorage = window.localStorage.getItem("produtos"); //busca o json file que já esta em localstorage
+  var produtosLocalStorage = window.localStorage.getItem("produtos"); //procura o json que já esta em localstorage
 
   if (produtosLocalStorage !== null) {
     produtos = JSON.parse(produtosLocalStorage); //faz o parse para a lista
@@ -97,8 +97,8 @@ function carrinho() {
     var novaLinha = document.createElement("tr");
     novaLinha.innerHTML = `
       <td>${produto.nome}</td>
-      <td>${produto.preco}€</td>
-      <td><input id="qtd" type="number" value="1"></td>
+      <td id="preco${i}">${produto.preco}€</td>
+      <td><input id="qtd${i}" type="number" min="1" value="1" onchange="atualizarPreco(${i})"></td>
       <td><button class="item" onclick="removerItem(this)">Remover</td>
     `;
     carrinhoTableBody.appendChild(novaLinha);
@@ -106,7 +106,30 @@ function carrinho() {
   }
   
   var campoTotal = document.querySelector("#campoTotal");
-  campoTotal.innerHTML = ` ${total.toFixed(2)}`;
+  campoTotal.innerHTML = ` ${total.toFixed(2)}€`;
+}
+
+
+function atualizarPreco(index) {
+  const produtos = JSON.parse(window.localStorage.getItem("produtos"));
+  const qtdInput = document.querySelector(`#qtd${index}`);
+  const precoCell = document.querySelector(`#preco${index}`);
+  const produto = produtos[index];
+
+  const quantidade = parseInt(qtdInput.value);
+  const novoPreco = quantidade * parseFloat(produto.preco);
+
+  precoCell.innerHTML = `${novoPreco.toFixed(2)}€`;
+
+  // Recalcular o total
+  let total = 0;
+  for (var i = 0; i < produtos.length; i++) {
+    const preco = parseFloat(document.querySelector(`#preco${i}`).innerHTML);
+    total += preco;
+  }
+  
+  var campoTotal = document.querySelector("#campoTotal");
+  campoTotal.innerHTML = ` ${total.toFixed(2)}€`;
 }
 
 
@@ -121,27 +144,26 @@ function limparCarrinho() {
 }
 
 
-//funcçao incompleta nao estou a conseguir atualizar o 
-//total depois de remover um artigo sem recarregar a pagina manualmente
 
-function removerItem(){
+function removerItem() {
   var artigo = document.querySelector('.item');
   var produtosLocalStorage = localStorage.getItem("produtos");
-  
-  var removeProduto = artigo.parentNode.parentNode;
+
+  var removeProduto = artigo.parentNode.parentNode;// acede ao parentNode da var artigo
   removeProduto.parentNode.removeChild(removeProduto);
   
-  if (produtosLocalStorage !== null){
+  if (produtosLocalStorage !== null) {
     var produtos = JSON.parse(produtosLocalStorage);
-    produtos.splice(artigo,1);
+    var indiceArtigo = Array.from(artigo.parentNode.children).indexOf(artigo);// procura uma lista dos elementos filhos do parentNode e devolve uma HTMLcolletcion com todos os filhos que é convertida num array para ser usada 
+    var precoRemovido = parseFloat(produtos[indiceArtigo].preco);
+    produtos.splice(indiceArtigo, 1);
     localStorage.setItem("produtos", JSON.stringify(produtos));
+
+    var campoTotal = document.querySelector("#campoTotal");
+    var totalAtual = parseFloat(campoTotal.textContent);
+  
+    campoTotal.innerHTML = ` ${(totalAtual - precoRemovido).toFixed(2)}€`;
   }
-  
-  var campoTotal = document.querySelector("#campoTotal");
-  var totalAtual = parseFloat(campoTotal);
-  var precoRemovido = parseFloat(produtosLocalStorage[artigo].preco); 
-  
-  campoTotal.textContent = ` ${(totalAtual - precoRemovido).toFixed(2)}`;
 }
 
 

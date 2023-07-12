@@ -6,10 +6,12 @@
 .emailHeader{
     padding:1rem;
 }
-.emailContainer h3{
+
+.emailContainer .email-novidades{
     font-size: 1.5rem;
     color:rgb(13, 121, 139);
 }
+
 .emailContainer p{
     font-size: 1.2rem;
     color:#FFBD59;
@@ -40,6 +42,7 @@
 .checkboxContainer .checkboxLabel span{
     text-decoration: underline;
 }
+
 .btnEnviar{
     padding: .5rem 5rem;
     background-color: rgb(13, 121, 139);
